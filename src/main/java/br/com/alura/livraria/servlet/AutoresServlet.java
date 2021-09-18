@@ -28,7 +28,7 @@ public class AutoresServlet extends HttpServlet {
 		// Obtém a lista de autores no banco de dados e adiciona essa lista na requisição.
 		req.setAttribute("autores", this.autorDao.listar());
 		
-		// Envia os dados para a página JSP.
+		// Encaminha a requisição para a página JSP.
 		req.getRequestDispatcher("WEB-INF/jsp/autores.jsp").forward(req, resp);
 		
 	}
@@ -48,7 +48,7 @@ public class AutoresServlet extends HttpServlet {
 		// Adiciona o autor no banco de dados.
 		this.autorDao.cadastrar(autor);
 		
-		// Encaminha requisição.
+		// Redireciona o cliente.
 		resp.sendRedirect("autores");
 		
 	}
