@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.alura.livraria.dao.AutorDao;
+import br.com.alura.livraria.factory.ConnectionFactory;
 import br.com.alura.livraria.modelo.Autor;
 
 @WebServlet("/autores")
@@ -18,7 +19,7 @@ public class AutoresServlet extends HttpServlet {
 	private AutorDao autorDao;
 	
 	public AutoresServlet() {
-		this.autorDao = new AutorDao();
+		this.autorDao = new AutorDao(new ConnectionFactory().getConnection());
 	}
 	
 	@Override

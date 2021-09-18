@@ -8,17 +8,16 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.alura.livraria.factory.ConnectionFactory;
 import br.com.alura.livraria.modelo.Autor;
 
 public class AutorDao {
 	
 	private Connection conexao;
 	
-	public AutorDao() {
-		this.conexao = new ConnectionFactory().getConnection();
+	public AutorDao(Connection conexao) {
+		this.conexao = conexao;
 	}
-	
+
 	public void cadastrar(Autor autor) {
 		
 		try {
