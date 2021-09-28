@@ -8,7 +8,7 @@
   <groupId>br.com.alura</groupId>
   <artifactId>livraria</artifactId>
   <version>1.0</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
   <name>livraria</name>
   <description>Projeto Livraria Online - Bootcamp Java Alura 2021 - Módulo 1</description>
   
@@ -60,8 +60,15 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-          <release>11</release>
+        	<source>1.8</source>
+        	<target>1.8</target>
         </configuration>
+      </plugin>
+      
+      <!--  Maven War Plugin -->
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
       </plugin>
 
     </plugins>
