@@ -42,9 +42,9 @@
 					<input type="date" id="dataNascimento" name="dataNascimento" class="form-control" required>
 				</div>
 				
-				<!-- Mini currículo -->
+				<!-- Minicurrículo -->
 				<div class="mb-3">
-					<label for="miniCurriculo" class="form-label">Mini currículo</label>
+					<label for="miniCurriculo" class="form-label">Minicurrículo</label>
 					<textarea id="miniCurriculo" name="miniCurriculo" rows="3" placeholder="Principais obras do autor" class="form-control" required></textarea>
 				</div>
 				
