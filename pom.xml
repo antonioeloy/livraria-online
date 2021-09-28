@@ -30,12 +30,13 @@
 	</dependency>
   </dependencies>
   <build>
+  	<finalName>livraria</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-          <release>15</release>
+          <release>11</release>
         </configuration>
       </plugin>
       <plugin>
