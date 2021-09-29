@@ -1,32 +1,53 @@
-# livraria-online
-Projeto de uma aplicação Web em Java para gestão de uma livraria online desenvolvido no Bootcamp Java 2021 da Alura.
+# :computer: livraria-online
+Aplicação Web Java utilizando Servlet, JSP e JDBC.
 
-## Módulo 1
+Este projeto foi desenvolvido no Módulo 1 do Bootcamp Java Alura 2021.
 
-No Módulo 1 do Bootcamp, a aplicação Web Java foi desenvolvida com as funcionalidades para cadastrar um autor e para listar os autores cadastrados. As seguintes tecnologias foram utilizadas:
+### :hourglass: Status do projeto
+Concluído.
 
-- **Servlet** -> para tratamento de requisições HTTP;
-- **JDBC (Java Database Connectivity)** -> para conexão com o banco de dados;
-- **JSP (JavaServer Pages) e JSTL (JavaServer Pages Standard Tag Library)** -> para criação da página contendo o formulário de cadastro de um autor e a lista de autores cadastrados;
-- **Bootstrap** -> para estilizar a página JSP.
+### :hammer_and_wrench: Tecnologias
 
-Nesta primeira versão da aplicação, as principais classes criadas foram:
+As seguintes tecnologias e ferramentas foram utilizadas no desenvolvimento deste projeto:
 
-- _Autor_ -> contém as principais informações para representar um autor;
-- _AutorDao_ -> contém os métodos para realizar operações no banco de dados, como cadastrar um autor e listar todos os autores cadastrados;
-- _ConnectionFactory_ -> para estabelecer uma conexão com o banco de dados;
-- _AutoresServlet_ -> para lidar com as requisições HTTP (_GET_ e _POST_).
+- [Java](https://www.oracle.com/java/)
+- [Eclipse IDE](https://www.eclipse.org/)
+- [JSP (JavaServer Pages)](https://www.oracle.com/java/technologies/jspt.html)
+- [JSTL (JavaServer Pages Standard Tag Library)](https://www.oracle.com/java/technologies/java-server-tag-library.html)
+- [JDBC (Java Database Connectivity)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/)
+- [Apache Tomcat](http://tomcat.apache.org/)
+- [MySQL](https://www.mysql.com/)
+- [Maven](https://maven.apache.org/)
+- [Git](https://git-scm.com/)
+- [Docker](http://modelmapper.org/)
 
-O projeto foi desenvolvido utilizando a versão 15 do Java. O servidor de aplicação empregado foi o _Apache Tomcat 9_ e o banco de dados escolhido foi o _MySQL 8.0_.
+### :page_with_curl: Features
+- [x] Cadastro de autores
+- [x] Listagem de autores
 
-Para criar a tabela _autores_, o seguinte comando SQL foi executado:
+### :pencil: Pré-requisitos
 
+Antes de começar, você precisa ter instalado em sua máquina as seguintes ferramentas:
+- [Git](https://git-scm.com/)
+- [Docker](https://www.docker.com/)
+
+### :rocket: Executando a aplicação
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/antonioeloy/livraria-online.git
+
+# Execute os contêineres da aplicação
+$ docker-compose up
+
+# Acesse o seguinte endereço no navegador
+$ http://localhost:8080/livraria/autores
 ```
-CREATE TABLE `autores` (
-  `id` int PRIMARY KEY AUTO_INCREMENT,
-  `nome` varchar(255),
-  `email` varchar(255),
-  `data_nascimento` date,
-  `mini_curriculo` varchar(255)
-);
-```
+
+### :gear: Testando a aplicação
+
+A aplicação permite cadastrar um novo autor e listar os autores cadastrados, conforme imagem a seguir:
+
+### :copyright: Licença
+
+Este projeto está licenciado nos termos da licença MIT.
