@@ -1,3 +1,7 @@
+<h1 align="center">
+  <img alt="banner" title="banner" src="src/main/webapp/banner.png" style="width:100%;" />
+</h1>
+
 # :computer: livraria-online
 Aplicação Web Java utilizando Servlet, JSP e JDBC.
 
