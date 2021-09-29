@@ -18,6 +18,7 @@ As seguintes tecnologias e ferramentas foram utilizadas no desenvolvimento deste
 - [JSP (JavaServer Pages)](https://www.oracle.com/java/technologies/jspt.html)
 - [JSTL (JavaServer Pages Standard Tag Library)](https://www.oracle.com/java/technologies/java-server-tag-library.html)
 - [JDBC (Java Database Connectivity)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/)
+- [Bootstrap](https://getbootstrap.com/)
 - [Apache Tomcat](http://tomcat.apache.org/)
 - [MySQL](https://www.mysql.com/)
 - [Maven](https://maven.apache.org/)
