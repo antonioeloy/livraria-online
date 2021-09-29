@@ -23,7 +23,7 @@ As seguintes tecnologias e ferramentas foram utilizadas no desenvolvimento deste
 - [Maven](https://maven.apache.org/)
 - [Eclipse IDE](https://www.eclipse.org/)
 - [Git](https://git-scm.com/)
-- [Docker](http://modelmapper.org/)
+- [Docker](https://www.docker.com/)
 
 ### :page_with_curl: Features
 - [x] Cadastro de autores
