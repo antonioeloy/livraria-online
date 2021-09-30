@@ -11,7 +11,7 @@ public class ConnectionFactory {
 
 		Connection conexao = null;
 		Integer tentativasConexao = 0;
-		while (conexao == null && tentativasConexao <= 10) {
+		while (conexao == null && tentativasConexao <= 20) {
 			try {
 				String url = "jdbc:mysql://mysqldb:3306/livraria";
 				String usuario = "root";
@@ -21,7 +21,7 @@ public class ConnectionFactory {
 				return conexao;
 			} catch (SQLException | ClassNotFoundException e) {
 				try {
-					TimeUnit.SECONDS.sleep(10);
+					TimeUnit.SECONDS.sleep(3);
 				} catch (InterruptedException ex) {
 					throw new RuntimeException(ex);
 				}
